@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - SoftBecX</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+            padding: 2.5rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #03045e;
+            border-bottom: 5px solid #03045e;
+        }
+        .login-card h1 {
+            font-size: 1.8rem;
+            color: #03045e;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        button[type="submit"] {
+            background-color: #03045e;
+            border-color: #03045e;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        button[type="submit"]:hover {
+            background-color: #0077b6;
+            border-color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="login-card">
+        <h1>SoftBecX</h1>
+        
+        <form action="SoftBecXLogin" method="post">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="Usuario" placeholder="Ingresa tu usuario" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="Contraseña" placeholder="Ingresa tu contraseña" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </article>
+
+</body>
+</html>
